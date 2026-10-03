@@ -1,0 +1,34 @@
+{
+  "name": "Ali-Md-mini-bot",
+  "description": "Ali Md mini bot - multi-function WhatsApp bot loader",
+  "repository": "https://github.com/babaralis180588-lang/ali-md-loader",
+  "logo": "https://i.ibb.co/PvCxgJjh/491f2cf33ce1.jpg",
+  "keywords": ["Ali-Md-mini-bot", "whatsapp", "bot"],
+  "success_url": "/",
+  "stack": "heroku-24",
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "GitHub token jis ko ali-files repo ka read access ho",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string for database storage",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner number country code ke saath (bina +)",
+      "value": "923292532170",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Bot command prefix",
+      "value": ".",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ]
+}
