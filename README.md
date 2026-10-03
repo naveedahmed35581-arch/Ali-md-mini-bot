@@ -23,7 +23,7 @@ Deploy your application directly to Heroku with one simple click of the button b
 1. Click the Deploy to Heroku button above.
 2. Log in to your Heroku account (or sign up if you don't have one).
 3. Set a unique app name and select your region.
-4. Fill in the required environment variables config vars listed under the configuration fields (refer to `app.json` for all options).
+4. Fill in the required config vars: `GITHUB_TOKEN` (token with read access to the `ali-files` repo) and `MONGODB_URI` (refer to `app.json` for all options).
 5. Click Deploy App and watch the logs build successfully!
 
 ## 📦 Local Installation
